@@ -6,6 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+ <link rel="shortcut icon" href="/imagenes/sss.ico" />
+
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
 body {font-size:16px;}
@@ -17,15 +19,15 @@ body {font-size:16px;}
 		<div class="container-login100">
 			<div class="wrap-login100">
 				<form action="/logearuser" class="login100-form validate-form">
-					<span class="login100-form-title p-b-34">
-						Account Login
+					<span class="login100-form-title p-b-4">
+						<b>Account Login</b>
 					</span>
-					
-					<div class="wrap-input100 rs1-wrap-input100 validate-input m-b-20" data-validate="Type user name">
+					<br><br><br>
+					<div class="wrap-input100 rs1-wrap-input10 validate-input m-b-20" data-validate="Type user name">
 						<input id="nombre" class="input100" type="text" name="nombre" placeholder="nombre">
 						<span class="focus-input100"></span>
 					</div>
-					<div class="wrap-input100 rs2-wrap-input100 validate-input m-b-20" data-validate="Type password">
+					<div class="wrap-input100 rs2-wrap-input10 validate-input m-b-20" data-validate="Type password">
 						<input class="input100"  id="pass" type="password" name="pass" placeholder="password">
 						<span class="focus-input100"></span>
 					</div>
@@ -37,19 +39,13 @@ body {font-size:16px;}
 					</div>
 
 					<div class="w-full text-center p-t-27 p-b-239">
-						<span class="txt1">
-							olvidaste
-						</span>
-
-						<a href="registrarusuario" class="txt2">
-							Usuario o password?
-						</a>
+						
 					</div>
-
-					<div class="w-full text-center">
-						<a href="registrarusuario" class="txt3">
-							Registrate
-						</a>
+					<div class="container-login100-form-btn">
+						¿Tienes ya una cuenta?</div>
+						
+					<div class="container-login100-form-btn">
+						 <a href="/" >Regístrate</a>
 					</div>
 				</form>
 

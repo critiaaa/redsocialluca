@@ -37,6 +37,12 @@ public class controler {
 			 System.out.println(pass);
 			 System.out.println(correo);
 			 
+			 
+			 if(id_usuario.trim()==""||pass.trim()==""||correo.trim()=="")
+			 {
+				 return "registrar";
+			 }else {
+			 
 			 Usuario usuario= new Usuario();
 			 
 			 usuario.setId_usuario(id_usuario);
@@ -46,7 +52,7 @@ public class controler {
 			 usuarioService.addUsuario(usuario);
 			 
 		return "login"; //señala a los jsp
-						
+			 }
 		}
 	
 	@RequestMapping("/logear") //listamos las categorias, serie una especie de Servlet...
@@ -79,21 +85,7 @@ public class controler {
 			}
 		}
 		
-		
-		
-		
-		/*
-		 * usuario = usuarioService.buscar_id(nombre);
-		 * 
-		 * 
-		 * request.setAttribute("listado", usuario.getAnuncios());
-		 * 
-		 * request.setAttribute("usuarioid", usuario); sesion.setAttribute("usuarioids",
-		 * usuario);
-		 * 
-		 * request.setAttribute("anuncios",
-		 * anuncioservice.listaranunciosbyuser(nombre));
-		 */
+	
 	
 
 		return "login"; //señala a los jsp
