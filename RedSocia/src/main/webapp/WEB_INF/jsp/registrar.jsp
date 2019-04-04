@@ -26,7 +26,7 @@ body {font-size:16px;}
 						<span class="focus-input100"></span>
 					</div>
 					<div class="wrap-input100 rs2-wrap-input100 validate-input m-b-20" data-validate="Type password">
-						<input class="input100" type="password" name="contraseña" placeholder="contraseña">
+						<input id="pass" class="input100" type="password" name="pass" placeholder="pass">
 						<span class="focus-input100"></span>
 					</div>
 					<div class="wrap-input100 rs1-wrap-input100 validate-input m-b-20" data-validate="Type email">

@@ -16,17 +16,17 @@ body {font-size:16px;}
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form">
+				<form action="/logearuser" class="login100-form validate-form">
 					<span class="login100-form-title p-b-34">
 						Account Login
 					</span>
 					
 					<div class="wrap-input100 rs1-wrap-input100 validate-input m-b-20" data-validate="Type user name">
-						<input id="first-name" class="input100" type="text" name="username" placeholder="nombre">
+						<input id="nombre" class="input100" type="text" name="nombre" placeholder="nombre">
 						<span class="focus-input100"></span>
 					</div>
 					<div class="wrap-input100 rs2-wrap-input100 validate-input m-b-20" data-validate="Type password">
-						<input class="input100" type="password" name="pass" placeholder="password">
+						<input class="input100"  id="pass" type="password" name="pass" placeholder="password">
 						<span class="focus-input100"></span>
 					</div>
 					

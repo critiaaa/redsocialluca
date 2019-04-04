@@ -1,6 +1,7 @@
 package com.example.demo.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,7 +15,6 @@ public class UsuarioService implements IUsuarioService {
 
 	
 	@Autowired
-
 	UsuarioRepository usuariorepository;
 	
 	
@@ -40,8 +40,18 @@ public class UsuarioService implements IUsuarioService {
 
 	@Override
 	public Usuario buscar_id(String id_usuario) {
-		// TODO Auto-generated method stub
 		return null;
 	}
+	
+	@Override
+	public Usuario buscarByIdUsuario(String id_usuario) {
+		System.out.println("enter user");
 
-}
+		Optional<Usuario> usuarios = usuariorepository.findById(id_usuario);
+		if(usuarios.isPresent()) {
+			Usuario usuario = usuarios.get();
+			System.out.println(usuario);
+			return usuario;
+		}
+		return null;
+	}}

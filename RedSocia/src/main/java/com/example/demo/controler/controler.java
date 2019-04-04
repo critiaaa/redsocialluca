@@ -1,6 +1,7 @@
 package com.example.demo.controler;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -27,42 +28,78 @@ public class controler {
 	public String registrarusuario (HttpServletRequest request) {
 		
 			 String id_usuario=request.getParameter("nombre");
-			 String contraseña=request.getParameter("contraseña");
+			 String pass=request.getParameter("pass");
 			 String correo=request.getParameter("correo");
 
 			 System.out.println("entramos en registrar user");
 		
 			 System.out.println(id_usuario);
-			 System.out.println(contraseña);
+			 System.out.println(pass);
 			 System.out.println(correo);
 			 
 			 Usuario usuario= new Usuario();
 			 
 			 usuario.setId_usuario(id_usuario);
-			 usuario.setId_usuario(contraseña);
-			 usuario.setId_usuario(correo);
+			 usuario.setContraseña(pass);
+			 usuario.setCorreo(correo);
 			 
 			 usuarioService.addUsuario(usuario);
 			 
-
-		/*
-		 * String pass=request.getParameter("password"); String
-		 * email=request.getParameter("email"); int telefono=
-		 * Integer.parseInt(request.getParameter("telefono"));
-		 * 
-		 * Usuarios usuario=new Usuarios(); usuario.setId_usuario(nombre);
-		 * usuario.setPass(pass); usuario.setEmail(email);
-		 * usuario.setTelefono(telefono);
-		 * 
-		 * System.out.println(usuario);
-		 * 
-		 * 
-		 * usuarioservice.addUsuario(usuario);
-		 */
-			 
-			return "registrar"; //señala a los jsp
+		return "login"; //señala a los jsp
 						
 		}
+	
+	@RequestMapping("/logear") //listamos las categorias, serie una especie de Servlet...
+	public String inicio4(HttpServletRequest request) {
+		 
+		 
+		return "login"; //señala a los jsp
+					
+	}
+	
+
+	@RequestMapping("/logearuser") //listamos las categorias, serie una especie de Servlet...
+	public String inicio5(HttpServletRequest request) {
+		HttpSession sesion=request.getSession(true); //NUBE - ABRO SESION
+
+		
+		String id_usuario=request.getParameter("nombre");
+		String pass=request.getParameter("pass");
+
+		Usuario usuario = usuarioService.buscarByIdUsuario(id_usuario); 
+		
+		if(usuario!=null)
+		{
+			if(usuario.getId_usuario().equalsIgnoreCase(id_usuario)&& usuario.getContraseña().equals(pass))
+			{
+				System.out.println("rr");
+				return "index"; 
+			}else {
+				return "login"; 
+			}
+		}
+		
+		
+		
+		
+		/*
+		 * usuario = usuarioService.buscar_id(nombre);
+		 * 
+		 * 
+		 * request.setAttribute("listado", usuario.getAnuncios());
+		 * 
+		 * request.setAttribute("usuarioid", usuario); sesion.setAttribute("usuarioids",
+		 * usuario);
+		 * 
+		 * request.setAttribute("anuncios",
+		 * anuncioservice.listaranunciosbyuser(nombre));
+		 */
+	
+
+		return "login"; //señala a los jsp
+					
+	}
+	
 	
 	
 }
