@@ -16,34 +16,44 @@ body {font-size:16px;}
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form" action="registrarusuario">
+				<form class="login100-form validate-form">
 					<span class="login100-form-title p-b-34">
-						REGISTRATE
+						Account Login
 					</span>
 					
 					<div class="wrap-input100 rs1-wrap-input100 validate-input m-b-20" data-validate="Type user name">
-						<input id="first-name" class="input100" type="text" name="nombre" placeholder="nombre">
+						<input id="first-name" class="input100" type="text" name="username" placeholder="nombre">
 						<span class="focus-input100"></span>
 					</div>
 					<div class="wrap-input100 rs2-wrap-input100 validate-input m-b-20" data-validate="Type password">
-						<input class="input100" type="password" name="contraseña" placeholder="contraseña">
+						<input class="input100" type="password" name="pass" placeholder="password">
 						<span class="focus-input100"></span>
 					</div>
-					<div class="wrap-input100 rs1-wrap-input100 validate-input m-b-20" data-validate="Type email">
-						<input id="email" class="input100" type="email" name="correo" placeholder="email">
-						<span class="focus-input100"></span>
-					</div>
+					
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn">
-							REGISTRATE
+							ENTRAR
 						</button>
 					</div>
 
+					<div class="w-full text-center p-t-27 p-b-239">
+						<span class="txt1">
+							olvidaste
+						</span>
 
-					
+						<a href="registrarusuario" class="txt2">
+							Usuario o password?
+						</a>
+					</div>
+
+					<div class="w-full text-center">
+						<a href="registrarusuario" class="txt3">
+							Registrate
+						</a>
+					</div>
 				</form>
 
-				<div class="login100-more" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZL-ysunDH141u19QvNP90B2MT4JR033w9U8b54iFOyAuReJbC9A"  width="585" height="900"></div>
+				<div class="login100-more" ><img src="https://www.nationalgeographic.com.es/medio/2018/11/15/acantilado-de-gasadalur-dinamarca_f55a5227_800x800.jpg"  width="585" height="900"></div>
 			</div>
 		</div>
 	</div>
@@ -53,3 +63,4 @@ body {font-size:16px;}
 	<div id="dropDownSelect1"></div>
 </body>
 </html>
+

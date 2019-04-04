@@ -16,7 +16,7 @@ body {font-size:16px;}
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form" action="registrarusuario">
+				<form class="login100-form validate-form">
 					<span class="login100-form-title p-b-34">
 						REGISTRATE
 					</span>
@@ -26,11 +26,11 @@ body {font-size:16px;}
 						<span class="focus-input100"></span>
 					</div>
 					<div class="wrap-input100 rs2-wrap-input100 validate-input m-b-20" data-validate="Type password">
-						<input class="input100" type="password" name="contraseña" placeholder="contraseña">
+						<input class="input100" type="password" name="pass" placeholder="password">
 						<span class="focus-input100"></span>
 					</div>
 					<div class="wrap-input100 rs1-wrap-input100 validate-input m-b-20" data-validate="Type email">
-						<input id="email" class="input100" type="email" name="correo" placeholder="email">
+						<input id="email" class="input100" type="email" name="email" placeholder="email">
 						<span class="focus-input100"></span>
 					</div>
 					<div class="container-login100-form-btn">
