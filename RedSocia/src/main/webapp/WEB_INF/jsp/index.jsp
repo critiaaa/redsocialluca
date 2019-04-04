@@ -1,66 +1,66 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
-<html lang="en">
-<title>INSTAGREM</title>
-<meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="estilos/prueba.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-<style>
-body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-body {font-size:16px;}
-.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-.w3-half img:hover{opacity:1}
-</style>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
 <body>
-	<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100">
-				<form class="login100-form validate-form">
-					<span class="login100-form-title p-b-34">
-						Account Login
-					</span>
-					
-					<div class="wrap-input100 rs1-wrap-input100 validate-input m-b-20" data-validate="Type user name">
-						<input id="first-name" class="input100" type="text" name="username" placeholder="nombre">
-						<span class="focus-input100"></span>
-					</div>
-					<div class="wrap-input100 rs2-wrap-input100 validate-input m-b-20" data-validate="Type password">
-						<input class="input100" type="password" name="pass" placeholder="password">
-						<span class="focus-input100"></span>
-					</div>
-					
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							ENTRAR
-						</button>
-					</div>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">Logo</a>
 
-					<div class="w-full text-center p-t-27 p-b-239">
-						<span class="txt1">
-							olvidaste
-						</span>
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 2</a>
+    </li>
 
-						<a href="registrarusuario" class="txt2">
-							Usuario o password?
-						</a>
-					</div>
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Dropdown link
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Link 1</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 3</a>
+      </div>
+    </li>
+  </ul>
+   <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-success" type="submit">Search</button>
+  </form>
+</nav>
 
-					<div class="w-full text-center">
-						<a href="registrarusuario" class="txt3">
-							Registrate
-						</a>
-					</div>
-				</form>
 
-				<div class="login100-more" ><img src="https://www.nationalgeographic.com.es/medio/2018/11/15/acantilado-de-gasadalur-dinamarca_f55a5227_800x800.jpg"  width="585" height="900"></div>
-			</div>
-		</div>
+	<br><br><br>
+	<div class="container" >
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXUNo272PDP0gzdQ4lmfQgtJZDjcgsxojKHmNcxoiz2wtK6r8V" width="450" height="450" style="margin-left:300px;" >
+	
+	<br><br><br><br>
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXUNo272PDP0gzdQ4lmfQgtJZDjcgsxojKHmNcxoiz2wtK6r8V" width="400" height="400" style="margin-left:300px;">
+	<br><br><br><br>
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXUNo272PDP0gzdQ4lmfQgtJZDjcgsxojKHmNcxoiz2wtK6r8V"width="400" height="400" style="margin-left:300px;">
+	<br><br><br><br>
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXUNo272PDP0gzdQ4lmfQgtJZDjcgsxojKHmNcxoiz2wtK6r8V" width="400" height="400" style="margin-left:300px;">
+	<br><br><br><br>
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXUNo272PDP0gzdQ4lmfQgtJZDjcgsxojKHmNcxoiz2wtK6r8V" width="400" height="400" style="margin-left:300px;">
+	<br><br><br><br>
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXUNo272PDP0gzdQ4lmfQgtJZDjcgsxojKHmNcxoiz2wtK6r8V" width="400" height="400" style="margin-left:300px;">
+	<br><br><br><br>
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXUNo272PDP0gzdQ4lmfQgtJZDjcgsxojKHmNcxoiz2wtK6r8V" width="400" height="400" style="margin-left:300px;">
+	<br><br><br><br>
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5UPz5bba4bdPdR9Qdi5kUh0xLJF3GPLhKCeRkaq-ojBZBYulk" width="400" height="400" style="margin-left:300px;">
+
+
+
 	</div>
-	
-	
-
-	<div id="dropDownSelect1"></div>
 </body>
 </html>
-
